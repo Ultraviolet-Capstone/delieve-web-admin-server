@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  min-width: 320px;
+  line-height: 1.43;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+button, label {
+  cursor: pointer;
+}
+
+.ultra-violet-color {
+  color: #5e4a8a;
+}
+
+.ultra-violet-background-color {
+  background-color: #5e4a8a;
+}
+
+.red {
+  color: #ed1c24 !important;
+}
+
+.blue {
+  color: #00b9ff !important;
+}
+
+.normal {
+  color : #5e6b7c !important;
+}

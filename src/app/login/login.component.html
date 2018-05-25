@@ -1,0 +1,41 @@
+<div class="login-wrap">
+  <div class="login-content">
+    <div style="text-align: center">
+      <img src="/assets/images/main-icon.png">
+    </div>
+    <div class="login-inner-wrapper">
+      <h1 class="login-header">
+        <strong>딜리브 로그인</strong>
+        <span class="ultra-violet-color">어드민</span>
+      </h1>
+      <ul class="login-body">
+        <li class="editor-container">
+          <p *ngIf="!isNameValid" class="error">아이디를 입력하세요</p>
+          <label for="login-id">
+            <input type="text" 
+                   id="login-id"
+                   value
+                   placeholder="아이디"
+                   class="login-input"
+                   [formControl]="nameControl">
+          </label>
+        </li>
+        <li class="editor-container">
+          <p *ngIf="!isPassWordValid" class="error">비밀번호를 입력하세요</p>
+          <label for="login-password">
+            <input type="password"
+                   id="login-password"
+                   value
+                   placeholder="비밀번호"
+                   class="login-input"
+                   [formControl]="passwordControl">
+          </label>
+        </li>
+        <li>
+          <button class="ultra-violet-background-color login-btn"
+                  (click)="onLoginBtnClick()">로그인</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
