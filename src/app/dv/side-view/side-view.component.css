@@ -1,0 +1,35 @@
+#side-view {
+  position: fixed;
+  top: 0px;
+  width: 220px;
+  bottom: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 15px;
+  border-right: 1px solid #ccc;
+  background-color: #5e4a8a;
+}
+
+#side-view li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+li span {
+  margin-left: 10px;
+  color: #fff;
+}
+
+#side-view li:hover {
+  background-color: gold;
+}
+
+#side-view li:hover span {
+  color: #fff;
+}
+
+.pressed {
+  background-color: gold;
+}
