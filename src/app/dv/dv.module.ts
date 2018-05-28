@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import { DvComponent } from './main';
+import { HeaderComponent } from './header';
+import { SideViewComponent } from './side-view';
 
 @NgModule({
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   declarations : [
-    DvComponent
+    DvComponent,
+    HeaderComponent,
+    SideViewComponent
   ],
   exports : [],
   providers : []

@@ -1,0 +1,33 @@
+.header {
+  margin-left: 220px;
+  height: 60px;
+  min-width: 1280px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header .header-wrapper {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.header .header-wrapper .header-title {
+  line-height: 60px;
+  font-size: 20px;
+}
+
+.header .header-wrapper .name {
+  cursor: pointer;
+  line-height: 40px;
+  margin-top: 10px;
+  font-size: 16px;
+  float: right;
+  width: 37px;
+  height: 37px;
+  border-radius: 100%;
+  background-color: #f1f1f1;
+}
+
+.header .header-wrapper .name:hover {
+  background-color: #5e4a8a;
+  color: #f1f1f1;
+}
