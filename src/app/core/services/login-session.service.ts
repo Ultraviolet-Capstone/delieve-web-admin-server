@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Admin } from '../models/admin';
+import { JwtHelper } from 'angular2-jwt';
 import { SessionToken } from '../models/session-token';
 
 @Injectable()
@@ -9,7 +10,7 @@ export class LoginSessionService {
   sessionToken() {
     const sessionToken = sessionStorage.getItem(this.userKey);
     if (!sessionToken) return undefined;
-    else return JSON.parse(sessionToken);
+    else return sessionToken;
   }
 
   isLogined() {
@@ -23,7 +24,7 @@ export class LoginSessionService {
 
   token() {
     if (this.check()) {
-      return this.sessionToken().token;
+      return this.decode(this.sessionToken());
     } else {
       return undefined;
     }
@@ -39,6 +40,15 @@ export class LoginSessionService {
 
   public clear() {
     sessionStorage.clear();
+  }
+
+  private decode(jwtStr) {
+    try {
+      let jwtHelper: JwtHelper = new JwtHelper();
+      return jwtHelper.decodeToken(jwtStr);
+    } catch (err) {
+      console.warn(err, `\nerror src -----\n${jwtStr}`);
+    }
   }
 
 }
