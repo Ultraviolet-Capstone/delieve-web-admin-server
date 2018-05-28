@@ -1,5 +1,8 @@
 <dv-header></dv-header>
-<dv-side-view></dv-side-view>
+<dv-side-view [sideViewIdx]=sideViewIdx></dv-side-view>
+
 <ng-container [ngSwitch]=sideViewIdx>
-  
+  <dv-home *ngSwitchCase=0></dv-home>
+  <dv-judge *ngSwitchCase=1></dv-judge>
+  <dv-track *ngSwitchCase=2></dv-track>
 </ng-container>

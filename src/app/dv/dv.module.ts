@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { DvComponent } from './main';
-import { HeaderComponent } from './header';
-import { SideViewComponent } from './side-view';
+import {
+  DvComponent,
+  HeaderComponent,
+  SideViewComponent,
+  HomeComponent,
+  JudgeComponent,
+  TrackComponent
+} from './';
 
 @NgModule({
   imports: [
@@ -12,7 +17,10 @@ import { SideViewComponent } from './side-view';
   declarations : [
     DvComponent,
     HeaderComponent,
-    SideViewComponent
+    SideViewComponent,
+    HomeComponent,
+    JudgeComponent,
+    TrackComponent
   ],
   exports : [],
   providers : []

@@ -6,19 +6,22 @@
     <span style="color: #fff">Hello, {{adminName}}</span>
   </div>
   <ul style="margin-top: 30px;">
-    <li>
+    <li [ngClass]="pressedClass(0)"
+        (click)="onSideViewBtnClick(0)">
       <span>홈</span>
       <span style="float: right; margin-right: 10px;">
         <i class="fa fa-home"></i>
       </span>
     </li>
-    <li>
+    <li [ngClass]="pressedClass(1)"
+        (click)="onSideViewBtnClick(1)">
       <span>배달원 심사</span>
       <span style="float: right; margin-right: 10px;">
         <i class="fa fa-gavel"></i>
       </span>
     </li>
-    <li>
+    <li [ngClass]="pressedClass(2)"
+        (click)="onSideViewBtnClick(2)">
       <span>배달 트래킹</span>
       <span style="float: right; margin-right: 10px;">
         <i class="fa fa-location-arrow"></i>

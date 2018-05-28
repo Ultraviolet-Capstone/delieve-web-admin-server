@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login';
-import { DvComponent } from './dv/main';
+import { DvComponent } from './dv';
 
 import { AuthGuard } from './guard';
 
