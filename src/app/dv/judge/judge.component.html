@@ -1,3 +1,52 @@
-<div class="content">
-judge
+<div class="wrapper" style="height: 100%;">
+  <div class="content">
+    <div class="judge-board">
+      <span>남은 배달원 심사 수 : </span>
+      <span class="red">{{remainEvaluateCnt}}</span>
+    </div>
+    <div class="judge-content">
+      <div style="height: 170px; text-align: center; margin-top: 10px;">
+        <img [src]="profilePath" width="160px;" height="160px;" style="margin-top: 5px;">
+      </div>
+      <div class="main-text-color" style="height: 70px; text-align: center;">
+        <div>
+          <span>{{name}}</span>
+          <span> | </span>
+          <span>{{birthday}}</span>
+        </div>
+        <div style="margin-top: 5px;">
+          <span>
+            {{email}}
+          </span>
+        </div>
+      </div>
+      <div *ngIf="!isEnd"
+           style="height: 320px; display: flex">
+        <div style="width:50%; text-align: center;">
+          <span class="title">신분증</span>
+          <div style="margin:30px; text-align: center">
+            <img [src]="idcardPath" width="300px" height="200px">
+          </div>
+        </div>
+        <div style="width:50%; text-align: center;">
+          <span class="title">셀카</span>
+          <div style="margin:30px; text-align: center">
+            <img [src]="selfiPath" width="300px" height="200px">
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!isEnd"
+           style="height: 220px; text-align: center">
+        <button class="judge-btn approved" (click)="onClickBtn('PASS')">
+          승인
+        </button>
+        <button class="judge-btn rejected" (click)="onClickBtn('DECLINE')">
+          거절
+        </button>
+        <button class="judge-btn pendding" (click)="onClickBtn('SUSPEND')">
+          보류
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

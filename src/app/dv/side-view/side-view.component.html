@@ -1,28 +1,26 @@
 <nav id="side-view">
-  <div style="width: 150px; height: 150px; border: 1px solid #fff; border-radius: 100%; margin: 20px 35px; text-align: center;">
-    <span style="font-size: 143px;">
-      <i class="fa fa-user"></i>
-    </span>
-    <span style="color: #fff">Hello, {{adminName}}</span>
+  <div style="margin: 10px 10px; display: flex">
+    <img src="/assets/images/main-icon.svg" width="50px" height="50px" style="margin-top: 10px;">
+    <span style="color: #fff; margin-left: 20px; line-height: 80px;">DELIEVE</span>
   </div>
   <ul style="margin-top: 30px;">
     <li [ngClass]="pressedClass(0)"
         (click)="onSideViewBtnClick(0)">
-      <span>홈</span>
+      <span>{{commonService.sideViewIndexToStr(0)}}</span>
       <span style="float: right; margin-right: 10px;">
         <i class="fa fa-home"></i>
       </span>
     </li>
     <li [ngClass]="pressedClass(1)"
         (click)="onSideViewBtnClick(1)">
-      <span>배달원 심사</span>
+      <span>{{commonService.sideViewIndexToStr(1)}}</span>
       <span style="float: right; margin-right: 10px;">
         <i class="fa fa-gavel"></i>
       </span>
     </li>
     <li [ngClass]="pressedClass(2)"
         (click)="onSideViewBtnClick(2)">
-      <span>배달 트래킹</span>
+      <span>{{commonService.sideViewIndexToStr(2)}}</span>
       <span style="float: right; margin-right: 10px;">
         <i class="fa fa-location-arrow"></i>
       </span>

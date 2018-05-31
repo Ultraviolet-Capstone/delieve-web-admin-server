@@ -5,7 +5,8 @@ import {
   SweetAlertService,
   LoginSessionService,
   RouteService,
-  ContentService
+  ContentService,
+  CommonService
 } from "./services";
 
 import { HttpModule } from '@angular/http';
@@ -21,7 +22,8 @@ import { HttpModule } from '@angular/http';
     SweetAlertService,
     LoginSessionService,
     RouteService,
-    ContentService
+    ContentService,
+    CommonService
   ]
 })
 export class CoreModule {

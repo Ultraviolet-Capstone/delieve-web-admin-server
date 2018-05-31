@@ -1,9 +1,9 @@
 <div class="header">
   <div class="header-wrapper">
-    <span class="header-title ultra-violet-color">딜리브</span>
-    <span class="name" (click)="onLogOutClick()">
-      <i class="fa fa-unlock"></i>
-    </span>
-    <!-- <span class="name ultra-violet-color">{{adminName}} 님</span> -->
+    <span class="side-view-title ultra-violet-color">|</span>
+    <span class="side-view-title">{{commonService.sideViewIndexToStr(sideViewIdx)}}</span>
+    <button class="name" (click)="onLogOutClick()">
+      로그아웃
+    </button>
   </div>
 </div>

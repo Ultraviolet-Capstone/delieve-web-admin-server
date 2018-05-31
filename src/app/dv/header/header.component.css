@@ -1,8 +1,16 @@
 .header {
   margin-left: 220px;
-  height: 60px;
+  height: 80px;
   min-width: 1280px;
   border-bottom: 1px solid #ccc;
+}
+
+.side-view-title {
+  float: left;
+  font-size: 25px;
+  line-height: 80px;
+  color: #5e6b7c;
+  margin-left: 10px;
 }
 
 .header .header-wrapper {
@@ -11,23 +19,24 @@
 }
 
 .header .header-wrapper .header-title {
-  line-height: 60px;
+  line-height: 80px;
   font-size: 20px;
 }
 
 .header .header-wrapper .name {
   cursor: pointer;
-  line-height: 40px;
-  margin-top: 10px;
+  line-height: 37px;
+  margin-top: 20px;
   font-size: 16px;
   float: right;
-  width: 37px;
+  width: 100px;
   height: 37px;
-  border-radius: 100%;
-  background-color: #f1f1f1;
+  border-radius: 5px;
+  background-color: #5e4a8a;
+  color: #fff;
 }
 
 .header .header-wrapper .name:hover {
-  background-color: #5e4a8a;
+  background-color: #00b9ff;
   color: #f1f1f1;
 }

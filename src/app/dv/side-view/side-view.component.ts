@@ -5,7 +5,7 @@ import {
   Input
 } 
 from '@angular/core'
-import { LoginSessionService, ContentService } from '../../core/services';
+import { LoginSessionService, ContentService, CommonService } from '../../core/services';
 
 @Component({
   selector: 'dv-side-view',
@@ -18,7 +18,8 @@ export class SideViewComponent implements OnInit {
   @Input() sideViewIdx: number = 0;
 
   constructor(private loginSessionService: LoginSessionService,
-              private contentService: ContentService){
+              private contentService: ContentService,
+              private commonService: CommonService){
   }
 
   ngOnInit() {

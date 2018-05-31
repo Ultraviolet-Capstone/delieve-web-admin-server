@@ -1,0 +1,14 @@
+#footer {
+  text-align: right;
+  line-height: 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+  padding: 0 20px;
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1500;
+  width: 100%;
+  color: #5e4a8a;
+}

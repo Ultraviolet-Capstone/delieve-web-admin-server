@@ -35,9 +35,9 @@ export class HttpService {
     try {
       return res.json();
     } catch (err) {
-      console.warn(err, `\nerror src -----\n${res.text()}`);
+      return res['_body'];
+      // console.warn(err, `\nerror src -----\n${res.text()}`);
     }
-    return [];
   }
 
   get grantType() {

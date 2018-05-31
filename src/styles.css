@@ -33,7 +33,16 @@ button, label {
   color : #5e6b7c !important;
 }
 
-.content {
+.wrapper {
   margin-left: 220px;
-    
+  background-color: #E5E9EC;
+}
+
+.main-text-color {
+  color : #5e6b7c;
+}
+
+
+.content {
+  padding: 20px 20px 20px;
 }

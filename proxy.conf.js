@@ -1,6 +1,6 @@
 const PROXY_CONFIG = {
   "/dv/auth/*": {
-    "target": "http://localhost:3000",
+    "target": "http://13.125.181.126",
     "secure": false,
     "changeOrigin": true,
     "pathRewrite": {"^/dv/auth" : "/auth"},
@@ -8,7 +8,7 @@ const PROXY_CONFIG = {
     }
   },
   "/dv/api/*": {
-    "target": "http://localhost:3000",
+    "target": "http://13.125.181.126",
     "secure": false,
     "changeOrigin": true,
     "pathRewrite": {"^/dv/api" : "/api"},

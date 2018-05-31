@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from "@angular/common/http";
 import { 
   HttpService,
-  LoginService
+  LoginService,
+  EvaluateService
 } from '../http';
 
 @NgModule({
@@ -14,7 +15,8 @@ import {
   exports     : [ HttpClientModule ],
   providers   : [
     HttpService,
-    LoginService
+    LoginService,
+    EvaluateService
   ]
 })
 export class HttpModule {

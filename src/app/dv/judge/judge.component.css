@@ -1,0 +1,77 @@
+td {
+  text-align: center;
+    width: 25%;
+  height: 30px;
+  border: 1px solid #ccc;
+  line-height: 30px;
+}
+
+thead tr td {
+  color: #5e4a8a;
+}
+
+.line-cell:hover {
+  background-color: #f0f0f0;
+}
+
+tr:line-cell(odd) {
+  background-color: #E5E9EC;
+}
+
+.judge-board {
+  background-color: #fff;
+  width: 600px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center
+}
+
+.judge-board span {
+  color: #5e6b7c;
+  line-height: 50px;
+}
+
+.judge-content {
+  /* margin-top: 100px; */
+  margin: 50px auto;
+  width: 800px;
+  height: 680px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.judge-btn {
+  cursor: pointer;
+  line-height: 37px;
+  /* margin-top: 10px; */
+  font-size: 16px;
+  width: 100px;
+  height: 37px;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.approved {
+  background-color: #00b9ff;
+}
+
+.rejected {
+  background-color: #ed1c24;
+}
+
+.pendding{
+  background-color: gold;
+}
+
+.judge-btn:hover {
+  background-color: #5e4a8a;
+  color: #f1f1f1;
+}
+
+.title {
+  color: #5e6b7c;
+  font-size: 20px;
+}
