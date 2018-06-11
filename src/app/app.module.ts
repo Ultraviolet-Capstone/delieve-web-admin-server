@@ -6,16 +6,19 @@ import { CoreModule } from './core';
 import { DvModule } from './dv/dv.module';
 import { HttpModule } from './core/services/http/http.module';
 import { AppRoutingModule } from './app.routing';
+import { TextMaskModule } from 'angular2-text-mask';
+import { QRCodeModule } from 'angular2-qrcode';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login';
 import { AuthGuard } from './guard';
-import { LoginService } from './core/services/http';
+import { QRComponent } from './qr';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    QRComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,9 @@ import { LoginService } from './core/services/http';
     AppRoutingModule,
     CoreModule,
     DvModule,
-    HttpModule
+    HttpModule,
+    TextMaskModule,
+    QRCodeModule
   ],
   exports: [],
   providers: [AuthGuard],

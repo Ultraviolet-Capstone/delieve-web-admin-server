@@ -20,4 +20,11 @@ export class LoginService {
       .catch(this.httpService.handleError);
   }
 
+  public receiverLogin(receiverPhoneNumber: string, matchingId: number) {
+    const url = `/dv/auth/receiver/token?phoneNumber=${receiverPhoneNumber}&matchingId=${matchingId}`;
+    return this.http.get(url)
+      .map(this.httpService.extractData)
+      .catch(this.httpService.handleError);
+  }
+
 }
