@@ -1,0 +1,22 @@
+.track-board {
+  background-color: #fff;
+  width: 600px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center
+}
+
+.track-board span {
+  color: #5e6b7c;
+  line-height: 50px;
+}
+
+.track-content {
+  /* margin-top: 100px; */
+  margin: 50px auto;
+  width: 1000px;
+  height: 680px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}

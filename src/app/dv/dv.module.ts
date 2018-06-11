@@ -1,18 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   DvComponent,
   HeaderComponent,
   SideViewComponent,
   HomeComponent,
   JudgeComponent,
-  TrackComponent
+  TrackComponent,
+  TrackTableComponent,
+  TrackDetailComponent
 } from './';
+import { MaterialModule } from './material.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   declarations : [
     DvComponent,
@@ -20,7 +25,9 @@ import {
     SideViewComponent,
     HomeComponent,
     JudgeComponent,
-    TrackComponent
+    TrackComponent,
+    TrackTableComponent,
+    TrackDetailComponent
   ],
   exports : [],
   providers : []

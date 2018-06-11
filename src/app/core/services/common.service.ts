@@ -8,8 +8,12 @@ export class CommonService {
       return '홈'
     } else if (index === 1) {
       return '배달원 심사'
+    } else if (index === 2){
+      return '실시간 배달 추적';
+    } else if (index === 3){
+      return '배달 히스토리';
     } else {
-      return '배달 추적';
+      return '유저 정보';
     }
   }
 

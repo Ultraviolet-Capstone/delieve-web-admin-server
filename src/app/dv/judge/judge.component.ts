@@ -1,7 +1,8 @@
 import { 
-  Component, OnInit
+  Component,
+  OnInit
 } 
-from '@angular/core'
+from '@angular/core';
 import { EvaluateService } from '../../core/services/http';
 import { CommonService, SweetAlertService } from '../../core/services';
 
